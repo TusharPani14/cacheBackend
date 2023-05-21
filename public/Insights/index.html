@@ -1,0 +1,823 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="/img/logow.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet'
+        href='https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css'>
+    <link rel='stylesheet'
+        href='https:////cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <title>Insights</title>
+</head>
+
+<body>
+    <!-- social start -->
+    <!-- <div class="icon-bar">
+        <a href="https://www.facebook.com/CacheDigitech01" class="soc ia"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/digitech_cache" class="soc tw"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/cache-digitech-pvt-ltd/" class="soc ln"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/cachetechnologies/" class="soc ial"><i
+                class="fa-brands fa-instagram"></i></a>
+    </div> -->
+    <!-- social end -->
+    <div class="icon-bar1">
+        <button id="myBtn" class="soc ia" style="color: aliceblue; padding: 10px 17px;border: none;">Enquire
+            Now</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <form action="/enquireNow" method="POST">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p style="padding-left: 40px; font-size:300%;">Reach Out To Us</p>
+                <div style="display: flex; padding-left: 40px;">
+                    <div style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                        <div>
+                            <div style="display: flex; flex-wrap: wrap; ">
+                                <div class="field">
+                                    <label for="name">Name<span class="req">*</span></label>
+                                    <input name="name" type="text" required>
+                                </div>
+                                <div class="field">
+                                    <label for="name">Email<span class="req">*</span></label>
+                                    <input name="email" type="text" required>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; ">
+                                <div class="field">
+                                    <label for="name">Products/Services<span class="req">*</span></label>
+                                    <input name="products" type="text" required>
+                                </div>
+                                <div class="field">
+                                    <label for="name">Phone Number<span class="req">*</span></label>
+                                    <input name="phoneNo" type="text" required>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap;">
+                                <div class="field">
+                                    <label for="name">Message<span class="req">*</span></label>
+                                    <textarea id="subject" name="message" placeholder="Write your Message"
+                                        style="width: 420px; border: none; border-radius: 10px; height: 100px;"></textarea>
+                                    <button class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill"
+                                        style="margin-top: 40px;">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h2 style="font-size: 30px;">Contact Information</h2>
+                            <p class="text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                                    style="color: black; text-decoration: none; font-size: 80%;"><i
+                                        class="fa-solid fa-location-dot" style="color: #f13737;"></i> GROUND
+                                    FLOOR, L-31, KAILASH
+                                    COLONY,
+                                    NEW
+                                    DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                            <p class="mb-0 text-black"><i class="fa-solid fa-phone" style="color: #f13737;"></i>
+                                1800-309-4333
+                            </p>
+                            <p class="mb-2 text-black"><i class="fa-solid fa-envelope" style="color: #f13737;"></i><a
+                                    href="mailto:info@cachedigitech.com" style="text-decoration: none;">
+                                    info@cachedigitech.com</a></i>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img class="img" src="/img/arrow1.jpg" height="800px"> -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Top-bar Start -->
+    <div class="container-fluid bg-primary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>1800-309-4333</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@cachedigitech.com</p>
+                    </div>
+                    <div class=" py-2">
+                        <button id="myBtn2" class="soc ia" style="background: none; border: none; color: aliceblue;">
+                            <p class="m-0"><i class="fa-solid fa-file me-2"></i>Contact Form</p>
+                        </button>
+                    </div>
+                    <div id="myModal2" class="modal2">
+
+                        <!-- Modal content -->
+                        <form action="/enquireNow" method="POST">
+                            <div class="modal-content2">
+                                <span class="close2">&times;</span>
+                                <p style="padding-left: 40px; font-size:300%;">Reach Out To Us</p>
+                                <div style="display: flex; padding-left: 40px;">
+                                    <div style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                                        <div>
+                                            <div style="display: flex; flex-wrap: wrap; ">
+                                                <div class="field">
+                                                    <label for="name">Name<span class="req">*</span></label>
+                                                    <input name="name" type="text" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="name">Email<span class="req">*</span></label>
+                                                    <input name="email" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex; flex-wrap: wrap; ">
+                                                <div class="field">
+                                                    <label for="name">Products/Services<span
+                                                            class="req">*</span></label>
+                                                    <input name="products" type="text" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="name">Phone Number<span class="req">*</span></label>
+                                                    <input name="phoneNo" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex; flex-wrap: wrap;">
+                                                <div class="field">
+                                                    <label for="name">Message<span class="req">*</span></label>
+                                                    <textarea id="subject" name="message"
+                                                        placeholder="Write your Message"
+                                                        style="width: 420px; border: none; border-radius: 10px; height: 100px;"></textarea>
+                                                </div>
+                                                <button class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill"
+                                                    style="margin-top: 40px;">Submit</button>
+                                            </div>
+                                        </div>
+                                        <div style="padding-top: 10px;">
+                                            <h2 style="font-size: 30px;">Contact Information</h2>
+                                            <p class="text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                                                    style="color: black; text-decoration: none; font-size: 80%;"><i
+                                                        class="fa-solid fa-location-dot" style="color: #f13737;"></i>
+                                                    GROUND
+                                                    FLOOR, L-31, KAILASH
+                                                    COLONY,
+                                                    NEW
+                                                    DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                                            <p class="mb-0 text-black"><i class="fa-solid fa-phone"
+                                                    style="color: #f13737; padding-bottom: 2em;"></i>
+                                                1800-309-4333<br><br>
+                                            </p>
+                                            <p class="mb-2 text-black"><i class="fa-solid fa-envelope"
+                                                    style="color: #f13737;"></i><a href="mailto:info@cachedigitech.com"
+                                                    style="text-decoration: none;">
+                                                    info@cachedigitech.com</a></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <img class="img" src="/img/arrow1.jpg" height="800px"> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal2 = document.getElementById("myModal2");
+
+                        // Get the button that opens the modal
+                        var btn2 = document.getElementById("myBtn2");
+
+                        // Get the <span> element that closes the modal
+                        var span2 = document.getElementsByClassName("close2")[0];
+
+                        // When the user clicks the button, open the modal 
+                        btn2.onclick = function () {
+                            modal2.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span2.onclick = function () {
+                            modal2.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal2) {
+                                modal2.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top-bar End -->
+
+    <!-- Navbar Start -->
+    <div class="sticka">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+            <a href="/index.html" class="navbar-brand p-0">
+                <h1 class="m-0 text-uppercase text-primary"><img src="/img/logo.png" width="120px"></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon" style="margin-top: 10px;"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 me-n3">
+                    <a href="/index.html" class="nav-item nav-link nav-hov">Home</a>
+                    <div class="dropdown"><a href="" class="nav-item nav-link dropbtn nav-hov">Solutions
+                        </a>
+                        <div class="dropdown-content dropdown-content1">
+                            <div class="drop-new" style="padding-right: 1em;  line-height: 23px;">
+                                <a href="/cloud solutions/index.html"><b class="nav-hov">Cloud Solutions</b>
+                                    <hr>Cloud Services<br>
+                                    Migration & Deployment<br>
+                                    Cloud Security<br>
+
+                                    Cloud Edge
+                                </a>
+                                <a href="/infrastructure solutions/index.html"><b class="nav-hov">Infrastructure
+                                        Solutions</b>
+                                    <hr>Storage Solutions<br>
+
+                                    Networking Solutions<br>
+                                    Data Center Solutions<br>
+                                    Security Solutions
+                                </a>
+                                <a href="/consulting solutions/index.html"><b class="nav-hov">Consulting Solutions</b>
+                                    <hr>Smart City<br>
+                                    Big Data
+                                </a>
+                                <a href="/cyber solutions/index.html"><b class="nav-hov">Cyber Solutions</b>
+                                    <hr>Cyber Essentials<br>
+                                    Cyber Stance for Enterprise<br>
+                                    Cyber Risk & Awareness
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a href="" class="nav-item nav-link dropbtn nav-hov">Services </a>
+                        <div class="dropdown-content dropdown-content2">
+                            <div class="drop-new" style=" line-height: 23px;">
+                                <a href="/Managed_IT_Services/index.html"><b class="nav-hov">Managed IT Services </b>
+                                    <hr>Asset Inventory &
+                                    Management
+                                    Business Process & Management Management<br> Service Desk <br>
+                                    Network Operation Center
+                                </a>
+                                <a href="/securityServices/index.html"><b class="nav-hov">IT Security Services</b>
+                                    <hr>Security Operation Center<br>
+                                    Risk Governance & Compliance<br>
+                                    Management System Offerings<br>
+                                    Awareness & Trainings<br>
+                                    Security Audit<br>
+                                    SOAR<br>
+                                    SIEM
+                                </a>
+                                <a href="/datacenter/index.html"><b class="nav-hov">DataCenter Services</b>
+                                    <hr>
+                                    Datacenter Design<br>
+                                    Datacenter Management
+                                </a>
+                                <a href="/infrastructureService/index.html"><b class="nav-hov">Infrastructure
+                                        Services</b>
+                                    <hr>Network
+                                    Operation Center
+                                </a>
+                                <a href="/talent acquisition/index.html"><b class="nav-hov">Talent Acquisition</b>
+                                    <hr>Process
+                                    Operating Model<br>
+                                    Mode of Operation<br>
+                                    Our Diffrentiators
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/careers/index.html" class="nav-item nav-link nav-hov">Careers</a>
+                    <a href="/aboutUs/index.html" class="nav-item nav-link nav-hov">About Cache</a>
+                    <a href="/Insights/index.html" class="nav-item nav-link nav-hov active">Insights</a>
+
+                </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <img src="assets/1.jpeg" width="100%">
+
+
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <h1 style="font-size: 80px; background: linear-gradient(to right,#d8c69f,#ffffff,#fff); color: #fff; padding: 30px 60px;text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;">Blogs</h1>
+    <div class="sliderq">
+
+        <button id="prevq" class="btnq">
+            <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <div class="card-contentq">
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im1.jfif" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/244/fc8f52e5-219e-47a0-8475-b96d4f3e6529.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>IOT: An Unexplored Realm</h2>
+                    <p style=" margin-top: 40px;">The Internet of Things is a system of
+                        interconnected physical
+                        devices that communicate via the Internet.
+                        These Internet of Things devices collect and share data with other devices, applications, and
+                        systems, and in many ways the data “talks” to us and the other things it’s connected to.
+                    <p>
+                        <button
+                            style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right; margin-bottom: 20px; color: #fff; margin-top: 60px;">Read
+                            More</button>
+                </div>
+            </div>
+            <!-- Card End -->
+
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im2.jfif" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/456/1e8ed695-cab8-45b2-b09c-153a7970f9f3.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>Big Data
+                    </h2>
+                    <p style=" margin-top: 20px;">
+                        Big data will be a must in the new IoT world, harnessing the power of the cloud to analyse all
+                        the data comingfrom these connected ‘things’, the network will have to be highly
+                        available with Pv6 as a necessity and what about 5G? ll of these together will be huge factors
+                        that will allow and enable Big Data to be a success.
+                    <p><br>
+                        <button style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right;  
+                            margin-top: 55px;
+                            margin-bottom: 10px; color: #fff;">Read
+                            More</button>
+                </div>
+            </div>
+            <!-- Card End -->
+
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im3.jfif" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/565/58f397b1-b9d9-49da-91a2-2b647835c0c3.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>Industrial Trends</h2>
+                    <p style=" margin-top: 40px;">
+                        Overall enterprise IoT spending grew 21.5% in 2022 to $201 billion. IoT Analytics lowered the
+                        growth outlook for 2023 to 18.5% (from 24% previously).
+                    <p>
+                        <button
+                            style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right; margin-top: 109px; margin-bottom: 70px; color: #fff;">Read
+                            More</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im4.jfif" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/244/fc8f52e5-219e-47a0-8475-b96d4f3e6529.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>Cache Cloud for Financial Services</h2>
+                    <p>Cache Cloud is well-suited for regulated workloads with its
+                        end-to-end cloud security capabilities and support for a wide-range of compliance programs.
+                        Cache Cloud for Financial Services
+                        extends the capabilities of Cache Cloud to provide an industry-driven cloud platform that
+                        supports the unique requirements of the financial services industry.
+                    <p>
+                        <button
+                            style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right; margin-bottom: 10px; color: #fff; margin-top: 30px;">Read
+                            More</button>
+                </div>
+            </div>
+            <!-- Card End -->
+
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im5.jfif" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/456/1e8ed695-cab8-45b2-b09c-153a7970f9f3.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>CACHE CIO organization’s application modernization journey
+                    </h2>
+                    <p>The CACHE CIO organization has undertaken a large transformation to
+                        modernize traditional applications and infrastructure to a hybrid cloud platform.
+                        As in life, we use modern technologies like smartphones, tablets, etc.,
+                        and then we upgrade them to either the latest software or the latest hardware to make our life
+                        easier, more efficient and environmentally sustainable
+                    <p>
+                    <div>
+                        <button style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right; 
+                            margin-top:30px;
+                            margin-bottom: 10px; margin-top: 0px; color: #fff;">Read
+                            More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card End -->
+
+            <!-- Card -->
+            <div class="cardq">
+                <i class="larq la-heartq"></i>
+                <div class="card-imgq">
+                    <img src="assets/im6.jpg" alt="">
+                    <img class="blurq"
+                        src="https://photo-cdn.icons8.com/assets/sata/editor/object/565/58f397b1-b9d9-49da-91a2-2b647835c0c3.png"
+                        alt="">
+                </div>
+                <div class="card-textq">
+                    <h2>Why the world needs sustainable software more than ever</h2>
+                    <p>Digital technology is now so deeply integrated into everyday life
+                        that it's sometimes easy to forget it's even there. But the growing use of technology
+                        around the world comes with a cost that is not always obvious to the end user: the carbon
+                        footprint.
+                    <p>
+                        <button
+                            style="background: #f62727; border-radius: 20px; padding: 10px 20px; float: right; margin-bottom: 20px;margin-top: 50px; color: #fff;">Read
+                            More</button>
+                </div>
+            </div>
+            <!-- Card End -->
+
+        </div>
+        <button id="nextq" class="btnq">
+            <i class="fa-solid fa-caret-right"></i>
+        </button>
+    </div>
+    <script>
+        const next = document.querySelector('#nextq')
+        const prev = document.querySelector('#prevq')
+
+        function handleScrollNext(direction) {
+            const cards = document.querySelector('.card-contentq');
+            const firstCard = cards.firstElementChild;
+            const cardWidth = firstCard.offsetWidth + parseInt(getComputedStyle(firstCard).marginRight);
+
+            cards.scrollLeft += window.innerWidth / 2 > 600 ? window.innerWidth / 2 : window.innerWidth - 100;
+
+            if (cards.scrollLeft >= cards.scrollWidth - window.innerWidth) {
+                const clonedFirstCard = firstCard.cloneNode(true);
+                cards.appendChild(clonedFirstCard);
+            }
+
+            const newScrollLeft = cards.scrollLeft + window.innerWidth / 2 > 600 ? window.innerWidth / 2 : window.innerWidth - 100;
+
+            if (newScrollLeft >= cardWidth) {
+                cards.scrollLeft = newScrollLeft - cardWidth;
+                cards.appendChild(firstCard);
+            } else {
+                cards.scrollLeft = newScrollLeft;
+            }
+        }
+
+
+        function handleScrollPrev(direction) {
+            const cards = document.querySelector('.card-contentq');
+            const lastCard = cards.lastElementChild;
+            const cardWidth = lastCard.offsetWidth + parseInt(getComputedStyle(lastCard).marginRight);
+
+            cards.scrollLeft -= window.innerWidth / 2 > 600 ? window.innerWidth / 2 : window.innerWidth - 100;
+
+            if (cards.scrollLeft <= 0) {
+                const clonedLastCard = lastCard.cloneNode(true);
+                cards.insertBefore(clonedLastCard, cards.firstChild);
+                cards.scrollLeft += cardWidth;
+                cards.removeChild(lastCard);
+            }
+
+            // Check if user scrolled beyond first card
+            if (cards.scrollLeft < -cardWidth) {
+                const clonedFirstCard = cards.firstElementChild.cloneNode(true);
+                cards.appendChild(clonedFirstCard);
+                cards.scrollLeft += cardWidth;
+                cards.removeChild(cards.firstElementChild);
+            }
+        }
+
+
+        next.addEventListener('click', handleScrollNext)
+        prev.addEventListener('click', handleScrollPrev)
+
+
+    </script>
+
+    <section class="pra"
+        style="display: flex; padding: 30px 40px; background: linear-gradient(to right,#380036,#0CBABA); color: #fff;">
+        <img src="assets/2.jpeg" width="100%" height="100%" style="border-radius: 50%; margin-top: 50px;">
+        <div style="margin-left: 40px; margin-right: 5px;">
+            <p style="font-size: 45px; ">Ms Prarthana Gupta</p>
+            <p style="position: relative; top: -20px;">Founder and CEO, CIO Digital Foundation (CIDIF)</p>
+            <p id="xy">With a vision to transform India into a digitally empowered nation, Prarthana Gupta is the
+                Founder and
+                CEO of CIO Digital Foundation (CIDIF), a
+                registered Non-profit organisation, an initiative of over 2500 Industry & Technology leaders across the
+                country to make the Government’s Digital
+                India Program a success and join hands to address the memorability challenge in the country.
+
+                Under her able leadership, CIDIF has been endeavoring to bridge the gap between Government Initiatives
+                and Industry Need by forging partnerships
+                with government bodies like NIELIT, NeGD, NIC, SDC and others to identify and deliver employability
+                focused e-skilling solutions, thus reinforcing
+                and restructuring India’s technological foundation. She works closely with the under-privileged and
+                marginalized sections of the society to ensure
+                that the youth get gainful employment or are equipped to start their entrepreneurship<br> ventures. She
+                has
+                also conceptualized and organized a
+                conference series Mann ki Baat Sarkar ke Saath to bring the industry and government under one platform
+                in order to address the challenges in
+                realizing the Digital India dream. The first edition of Mann ki Baat Sarkar ke Saath was held in April
+                2016.<br>
+                "Prarthana also leads an initiative Shakti within CIDIF aimed at creating a community of self-reliant,
+                self–employed women by imparting them with
+                IT- training."
+            </p>
+            <button
+                style="color: #fff; background: #c61818; border-radius: 30px; padding: 10px 25px; float: right;">Know
+                More</button>
+        </div>
+    </section>
+    <section
+        style="display: flex; flex-wrap: wrap; background: #f62727; justify-content: space-between; padding: 70px 120px 70px 50px;">
+        <div class="insight-ban" style="color:#fff; font-size: 35px ;">
+            Stay connected to Cache Technologies<br>
+            Sign up to get the latest updates.
+        </div>
+        <div style="display: flex; flex-direction: column; ">
+            <button class="news"
+                style="border: 3px solid #fff; background: none; padding: 20px 70px; color: #fff; letter-spacing: 3px;">JOIN
+                NEWSLETTER</button><br>
+            <ul class="ins-icon" style="list-style: none; display: flex;">
+                <li style="margin-right: 10px;"><a href="https://www.instagram.com/cachetechnologies/"><img
+                            src="https://img.icons8.com/color/48/null/instagram-new--v1.png" /></a>
+                </li>
+                <li style="margin-right: 10px;"><a href="https://www.facebook.com/CacheDigitech01"><img
+                            src="https://img.icons8.com/color/48/null/facebook.png" /></a></li>
+                <li style="margin-right: 10px;"><a href="https://twitter.com/digitech_cache"><img
+                            src="https://img.icons8.com/color/48/null/twitter-squared.png" /></a>
+                </li>
+                <li style="margin-right: 10px;"><a href="https://www.linkedin.com/company/cache-digitech-pvt-ltd/"><img
+                            src="https://img.icons8.com/color/48/null/linkedin.png" /></a></li>
+                <li><a href="mailto:info@cachedigitech.com"><img
+                            src="https://img.icons8.com/color/48/null/new-post.png" /></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer start -->
+    <div class="foo">
+        <div style="background: rgb(78, 78, 78); padding: 10px; text-align: center;">
+            <div
+                style="display: flex; justify-content: flex-end; margin:10px 50px; flex-wrap: wrap; text-align: center;">
+                <h4 style="color: aliceblue; margin-right: 30px; text-align: center;">Know how we can
+                    add value</h4>
+                <button class="btn px-4 btn-three btnn" style="background: rgb(197, 32, 32);"><i
+                        class="fa-solid fa-angles-right me-2"></i><span>Connect with
+                        Us</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-secondary p-5" style="background-color: rgb(189, 189, 189);">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="/img/logo.png" width="200px" href="/index.html">
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Solutions</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="/cloud solutions/index.html">Cloud and DataCenter</a>
+                    <a class="text-black mb-2" href="/infrastructure solutions/index.html">Infrastructure</a>
+                    <a class="text-black mb-2" href="/consulting solutions/index.html">Consulting Solutions</a>
+                    <a class="text-black mb-2" href="/cyber solutions/index.html">Cyber Solutions</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Careers</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="#">Life at Cache Digitech
+                    </a>
+                    <a class="text-black mb-2" href="#">Latest Jobs</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+
+                <h3 class="text-black mb-4">About Cache</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="#">Vision/Mission/Goal</a>
+                    <a class="text-black mb-2" href="#">Our Journey</a>
+                    <a class="text-black mb-2" href="#">Cache Advantage</a>
+                    <a class="text-black mb-2" href="#">Our Team</a>
+                    <a class="text-black mb-2" href="#">Our CEO</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 follow">
+                <h3 class="text-black mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg me-2 text-black" href="https://www.facebook.com/CacheDigitech01"><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+
+                    <a class="btn btn-lg me-2 text-black" href="https://twitter.com/digitech_cache"><i
+                            class="fab fa-twitter fw-normal"></i></a>
+
+                    <a class="btn btn-lg text-black" href="https://www.instagram.com/cachetechnologies/"><i
+                            class="fab fa-instagram fw-normal"></i></a>
+
+                    <a class="btn btn-lg text-black" href="https://www.linkedin.com/company/cache-digitech-pvt-ltd/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <button class="btn px-4 btn-three btnn" style="background: rgb(197, 32, 32);">
+                    <i class="fa-solid fa-file"></i>&nbsp;<span>Contact Form</span>
+                </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Services</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="/Managed_IT_Services/index.html">Managed Services</a>
+                    <a class="text-black mb-2" href="/securityServices/index.html">IT Security Services</a>
+                    <a class="text-black mb-2" href="/datacenter/index.html">DataCenter Services</a>
+                    <a class="text-black mb-2" href="/infrastructureService/index.html">Infrastructure Services</a>
+                    <a class="text-black mb-2" href="/talent acquisition/index.html">Talent Services</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Insights</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" style="font-size: 0.8em;" href="#">BLOGS</a>
+                    <a class="text-black mb-2" style="font-size: 0.8em;" href="#">NEWSLETTER</a>
+                    <a class="text-black mb-2" href="#">Events</a>
+                    <a class="text-black mb-2" href="#">Recognition</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Get In Touch</h3>
+                <p class="mb-2 text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                        style="color: black; line-height: 20px;"><i class="bi bi-geo-alt text-black me-2"></i>GROUND
+                        FLOOR, L-31, KAILASH
+                        COLONY,
+                        NEW
+                        DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                <p class="mb-2 text-black"><i class="bi bi-envelope-open text-black me-2"></i><a
+                        href="mailto:info@cachedigitech.com" style="color: black; line-height: 20px;"> &nbsp;
+                        info@cachedigitech.com</a>
+                </p>
+                <p class="mb-0 text-black"><i class="bi bi-telephone text-black me-2"></i>1800-309-4333
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">CONTACT US</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">SITEMAP</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">INDEX</p>
+                    </div>
+                    <div class="py-2">
+                        <a class="text-white" href="/privacy/index.html">
+                            <p class="m-0 ">PRIVACY STATEMENT</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+
+    <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+    <script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 5.5,
+            spaceBetween: 10,
+            centeredSlides: true,
+            freeMode: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                500: {
+                    slidesPerView: 1
+                },
+                700: {
+                    slidesPerView: 1.5
+                }
+            }
+        });
+    </script>
+    <script>
+        Splitting();
+        ScrollOut({
+            threshold: .2,
+            once: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>

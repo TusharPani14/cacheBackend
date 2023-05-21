@@ -1,0 +1,887 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="/img/logow.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting@1.0.0/dist/splitting.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Data Center</title>
+</head>
+
+<body>
+    <!-- social start -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/CacheDigitech01" class="soc ia"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/digitech_cache" class="soc tw"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/cache-digitech-pvt-ltd/" class="soc ln"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/cachetechnologies/" class="soc ial"><i
+                class="fa-brands fa-instagram"></i></a>
+    </div>
+    <!-- social end -->
+    <div class="icon-bar1">
+        <button id="myBtn" class="soc ia" style="color: aliceblue; padding: 10px 17px;border: none;">Enquire
+            Now</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <form action="/enquireNow" method="POST">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p style="padding-left: 40px; font-size:300%;">Reach Out To Us</p>
+                <div style="display: flex; padding-left: 40px;">
+                    <div style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                        <div>
+                            <div style="display: flex; flex-wrap: wrap; ">
+                                <div class="field">
+                                    <label for="name">Name<span class="req">*</span></label>
+                                    <input name="name" type="text" required>
+                                </div>
+                                <div class="field">
+                                    <label for="name">Email<span class="req">*</span></label>
+                                    <input name="email" type="text" required>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; ">
+                                <div class="field">
+                                    <label for="name">Products/Services<span class="req">*</span></label>
+                                    <input name="products" type="text" required>
+                                </div>
+                                <div class="field">
+                                    <label for="name">Phone Number<span class="req">*</span></label>
+                                    <input name="phoneNo" type="text" required>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap;">
+                                <div class="field">
+                                    <label for="name">Message<span class="req">*</span></label>
+                                    <textarea id="subject" name="message" placeholder="Write your Message"
+                                        style="width: 420px; border: none; border-radius: 10px; height: 100px;"></textarea>
+                                    <button class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill"
+                                        style="margin-top: 40px;">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="padding-top: 10px;">
+                            <h2 style="font-size: 30px;">Contact Information</h2>
+                            <p class="text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                                    style="color: black; text-decoration: none; font-size: 80%;"><i
+                                        class="fa-solid fa-location-dot" style="color: #f13737;"></i> GROUND
+                                    FLOOR, L-31, KAILASH
+                                    COLONY,
+                                    NEW
+                                    DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                            <p class="mb-0 text-black"><i class="fa-solid fa-phone" style="color: #f13737;"></i>
+                                1800-309-4333
+                            </p>
+                            <p class="mb-2 text-black"><i class="fa-solid fa-envelope" style="color: #f13737;"></i><a
+                                    href="mailto:info@cachedigitech.com" style="text-decoration: none;">
+                                    info@cachedigitech.com</a></i>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img class="img" src="/img/arrow1.jpg" height="800px"> -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Top-bar Start -->
+    <div class="container-fluid bg-primary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>1800-309-4333</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@cachedigitech.com</p>
+                    </div>
+                    <div class=" py-2">
+                        <button id="myBtn2" class="soc ia" style="background: none; border: none; color: aliceblue;">
+                            <p class="m-0"><i class="fa-solid fa-file me-2"></i>Contact Form</p>
+                        </button>
+                    </div>
+                    <div id="myModal2" class="modal2">
+
+                        <!-- Modal content -->
+                        <form action="/enquireNow" method="POST">
+                            <div class="modal-content2">
+                                <span class="close2">&times;</span>
+                                <p style="padding-left: 40px; font-size:300%;">Reach Out To Us</p>
+                                <div style="display: flex; padding-left: 40px;">
+                                    <div style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                                        <div>
+                                            <div style="display: flex; flex-wrap: wrap; ">
+                                                <div class="field">
+                                                    <label for="name">Name<span class="req">*</span></label>
+                                                    <input name="name" type="text" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="name">Email<span class="req">*</span></label>
+                                                    <input name="email" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex; flex-wrap: wrap; ">
+                                                <div class="field">
+                                                    <label for="name">Products/Services<span
+                                                            class="req">*</span></label>
+                                                    <input name="products" type="text" required>
+                                                </div>
+                                                <div class="field">
+                                                    <label for="name">Phone Number<span class="req">*</span></label>
+                                                    <input name="phoneNo" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex; flex-wrap: wrap;">
+                                                <div class="field">
+                                                    <label for="name">Message<span class="req">*</span></label>
+                                                    <textarea id="subject" name="message"
+                                                        placeholder="Write your Message"
+                                                        style="width: 420px; border: none; border-radius: 10px; height: 100px;"></textarea>
+                                                </div>
+                                                <button class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill"
+                                                    style="margin-top: 40px;">Submit</button>
+                                            </div>
+                                        </div>
+                                        <div style="padding-top: 10px;">
+                                            <h2 style="font-size: 30px;">Contact Information</h2>
+                                            <p class="text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                                                    style="color: black; text-decoration: none; font-size: 80%;"><i
+                                                        class="fa-solid fa-location-dot" style="color: #f13737;"></i>
+                                                    GROUND
+                                                    FLOOR, L-31, KAILASH
+                                                    COLONY,
+                                                    NEW
+                                                    DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                                            <p class="mb-0 text-black"><i class="fa-solid fa-phone"
+                                                    style="color: #f13737; padding-bottom: 2em;"></i>
+                                                1800-309-4333<br><br>
+                                            </p>
+                                            <p class="mb-2 text-black"><i class="fa-solid fa-envelope"
+                                                    style="color: #f13737;"></i><a href="mailto:info@cachedigitech.com"
+                                                    style="text-decoration: none;">
+                                                    info@cachedigitech.com</a></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <img class="img" src="/img/arrow1.jpg" height="800px"> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        // Get the modal
+                        var modal2 = document.getElementById("myModal2");
+
+                        // Get the button that opens the modal
+                        var btn2 = document.getElementById("myBtn2");
+
+                        // Get the <span> element that closes the modal
+                        var span2 = document.getElementsByClassName("close2")[0];
+
+                        // When the user clicks the button, open the modal 
+                        btn2.onclick = function () {
+                            modal2.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span2.onclick = function () {
+                            modal2.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal2) {
+                                modal2.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top-bar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="sticka">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+            <a href="/index.html" class="navbar-brand p-0">
+                <h1 class="m-0 text-uppercase text-primary"><img src="/img/logo.png" width="120px"></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon" style="margin-top: 10px;"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 me-n3">
+                    <a href="/index.html" class="nav-item nav-link nav-hov">Home</a>
+                    <div class="dropdown"><a href="" class="nav-item nav-link dropbtn nav-hov">Solutions
+                        </a>
+                        <div class="dropdown-content dropdown-content1">
+                            <div class="drop-new" style="padding-right: 1em;  line-height: 23px;">
+                                <a href="/cloud solutions/index.html"><b class="nav-hov">Cloud Solutions</b>
+                                    <hr>Cloud Services<br>
+                                    Migration & Deployment<br>
+                                    Cloud Security<br>
+                                    Cloud: Edge or on-Prem
+                                </a>
+                                <a href="/infrastructure solutions/index.html"><b class="nav-hov">Infrastructure
+                                        Solutions</b>
+                                    <hr>
+                                    Storage Solutions<br>
+                                    Networking Solutions<br>
+                                    Data Center Solutions<br>
+                                    Security Solutions<br>
+                                    Support Solutions
+                                </a>
+                                <a href="/consulting solutions/index.html"><b class="nav-hov">Consulting
+                                        Solutions</b>
+                                    <hr>
+                                    Smart City<br>
+                                    Big Data
+                                </a>
+                                <a href="/cyber solutions/index.html"><b class="nav-hov">Cyber Solutions</b>
+                                    <hr>
+                                    Cyber Risk & Awareness<br>
+                                    Cyber Espionage<br>
+                                    Cyber Essentials<br>
+                                    Cyber Security Posture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown"><a href="" class="nav-item nav-link dropbtn nav-hov active">Services </a>
+                        <div class="dropdown-content dropdown-content2">
+                            <div class="drop-new" style=" line-height: 23px;">
+                                <a href="/Managed_IT_Services/index.html"><b class="nav-hov">Managed IT Services </b>
+                                    <hr>Asset Inventory Management<br>
+                                    Vendor Management<br>
+                                    Infra Platform Management<br>
+                                    Design & Management<br>
+                                    Network Operation Center<br>
+                                    Helpdesk Support
+                                </a>
+                                <a href="/securityServices/index.html"><b class="nav-hov">IT Security Services</b>
+                                    <hr>
+                                    Managed SOC Services<br>
+                                    Management System Offerings<br>
+                                    Security Services<br>
+                                    Risk Governance & Compliance Services<br>
+                                    Awareness & Trainings<br>
+                                    Security Audit
+                                </a>
+                                <a href="/datacenter/index.html"><b class="nav-hov">DataCenter Services</b>
+                                    <hr>
+                                    Support Services<br>
+                                    Managed Datacenter Services<br>
+                                    Application Services<br>
+                                    Technical Training Services<br>
+                                    Technical Consulting Services<br>
+                                    Finance & Leasing Services
+                                </a>
+                                <a href="/infrastructureService/index.html"><b class="nav-hov">Infrastructure
+                                        Services</b>
+                                    <hr>Disaster Recovery<br>
+                                    Business Continuity<br>
+                                    Monitoring & Remediation<br>
+                                    Infra Lifecycle
+                                </a>
+                                <a href="/talent acquisition/index.html"><b class="nav-hov">Talent Acquisition</b>
+                                    <hr>Leverage Manpower<br>
+                                    Train-Deploy<br>
+                                    Contractual
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/careers/index.html" class="nav-item nav-link nav-hov">Careers</a>
+                    <a href="/aboutUs/index.html" class="nav-item nav-link nav-hov">About Cache</a>
+                    <a href="/Insights/index.html" class="nav-item nav-link nav-hov">Insights</a>
+
+                </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <div class="home">
+        <video autoplay muted loop>
+            <source src="assets/vid.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <!-- </div> -->
+    <!-- <div class="overlay"></div> -->
+    <div class="home-content">
+        <div class="tabs">
+            <input type="radio" id="tab1" name="tab-control" checked>
+            <input type="radio" id="tab2" name="tab-control">
+            <input type="radio" id="tab3" name="tab-control">
+            <input type="radio" id="tab4" name="tab-control">
+            <input type="radio" id="tab5" name="tab-control">
+            <input type="radio" id="tab6" name="tab-control">
+            <ul>
+                <li title="Consult"><label for="tab1" role="button"><span class="ic"> <span
+                                class="ico">&#9679;</span><span class="ic">Consult</span></label></li>
+                <li title="Build"><label for="tab2" role="button"><span class="ico">&#9679;</span><span
+                            class="ic">Build</span></label></li>
+                <li title="Consult"><label for="tab3" role="button"><span class="ico">&#9679;</span><span
+                            class="ic">Migration</label></li>
+                <li title="Build"><label for="tab4" role="button"><span class="ico">&#9679;</span><span
+                            class="ic">Backup</span></label></li>
+                <li title="Shipping"><label for="tab5" role="button"><span class="ico">&#9679;</span><span
+                            class="ic">Deploy</span></label></li>
+                <li title="Returns"><label for="tab6" role="button"><span class="ico">&#9679;</span><span
+                            class="ic">Design</span></label></li>
+            </ul>
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+            <div class="content">
+                <section>
+                    <h2>Consult</h2>Consultation services provides pathways to create solutions to your challenges
+                    via established
+                    knowledge base, industry accepted practices, Technical Know – how. Strategizing resources to
+                    reduce capex &
+                    opex.
+                </section>
+                <section>
+                    <h2>Build</h2>
+                    Building a DataCenter comprises of procurement of requisite infrastructure and initiating
+                    services, which are
+                    necessary for the DataCenter architecture to perform at highest potential using DCIM
+                    Capabilities, reducing opex costs
+                </section>
+                <section>
+                    <h2>Migration</h2>
+                    Datacenter Migration enables an organization to upgrade its IT resources to another architecture
+                    either to
+                    upgrade or change location, reducing operational expenditure in process.
+                </section>
+                <section>
+                    <h2>Backup</h2>
+                    In case of any failures, it is imperative that business sensitive data is always protected and
+                    available for correct decisions.
+                </section>
+                <section>
+                    <h2>Deploy</h2>
+                    Deploying a DataCenter comprises of using the facility infrastructure (Storage, Network & Security)
+                    effectively to share the workload amongst the different hardware to ensure redundancy, sustainable
+                    power utilization, increase uptime.
+                </section>
+                <section>
+                    <h2>Design</h2>
+                    DataCenter Design serves as main chess-piece of DataCenter, Location of different infrastructure
+                    in the facility
+                    to maximize processing; placement of cooling units to keep facility at conducive temperature and
+                    Backup
+                    solutions to ensure availability in case of power failure creating a better DataCenter
+                    architecture through
+                    essential DCIM.
+                </section>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="content1z">
+        Cache services encompass facility-related components or activities that support
+        the projects and operation of a data center, which is an environment that provides processing, storage,
+        networking, management and the distribution of data within an enterprise.
+    </div>
+
+    <section class="choose">
+        <ul class="choose-icon">
+            <li class="choose-title"><i class="fa-solid fa-cubes"></i>Scalable</li>
+            <li class="choose-title"><i class="fa-solid fa-lightbulb"></i>Modular</li>
+            <li class="choose-title"><i class="fa-solid fa-gear"></i>Sustainable</li>
+            <li class="choose-title"><i class="fa-solid fa-gears"></i>Customized</li>
+            <li class="choose-title"><i class="fa-sharp fa-solid fa-cube"></i>Redundancy</li>
+            <li class="choose-title"><i class="fa-solid fa-user"></i>Support</li>
+
+        </ul>
+    </section>
+
+    <section class="serv-section">
+        <div class="serv-tex">
+            <h1>SERVICES</h1>
+        </div>
+        <div class="serv-img">
+            <div class="serv-img-cl">
+                <div class="serv-container">
+                    <p>DATA CENTER INFRASTRUCTURE<br>
+                        MANAGEMENT (DCIM)
+                    </p><br>
+                    <img src="assets/1.png">
+                </div>
+                <div class="serv-container">
+                    <p>LIFECYCLE SERVICES</p><br>
+                    <img src="assets/2.png">
+                </div>
+                <div class="serv-container">
+                    <p>MANAGED DATA CENTER SERVICES</p><br>
+                    <img src="assets/3.png">
+                </div>
+            </div>
+            <div class="serv-img-cl">
+                <div class="serv-container">
+                    <img src="assets/4.png"><br>
+                    <p>SUPPORT SERVICES</p>
+                </div>
+                <div class="serv-container">
+                    <img src="assets/5.png"><br>
+                    <p>INCIDENT & RISK MANAGEMENT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="serv-boxes">
+        <div class="serv-box">
+            <img src="assets/6.png">
+            <div class="serv-text">
+                <h2>SUPPORT SERVICES</h2>
+                <p>Technical support services for data
+                    centres help to address challenges
+                    with the servers, storage, software
+                    and networking equipment that
+                    constitute a data center, or the
+                    related processes involved in
+                    managing the equipment.
+                </p>
+
+            </div>
+        </div>
+        <div class="serv-box">
+            <img src="assets/7.png">
+            <div class="serv-text">
+                <h2>MANAGED DATACENTER
+                    SERVICES</h2>
+                <p>Services range from hosting,
+                    managing and maintaining an
+                    entire data center to more discrete
+                    tasks such as upgrading servers or
+                    backing up data.</p>
+
+            </div>
+        </div>
+        <div class="serv-box">
+            <img src="assets/8.png">
+            <div class="serv-text">
+                <h2>APPLICATION SERVICES</h2>
+                <p>Application service provider is a
+                    large segment that provides
+                    software-based services to other
+                    companies to access technical
+                    services over a network to enhance
+                    DCIM capabilities</p>
+
+            </div>
+        </div>
+        <div class="serv-box">
+            <img src="assets/11.png">
+            <div class="serv-text">
+                <h2>TECHNICAL TRAINING
+                    SERVICES</h2>
+                <p>Technical consulting services, provide
+                    knowledge, skills and competencies
+                    that apply to hardware, software or
+                    processes related to managing a
+                    datacenter, or fixing, updating,
+                    integrating or managing any of the
+                    equipment within a data center.</p>
+
+            </div>
+        </div>
+        <div class="serv-box">
+            <img src="assets/10.png">
+            <div class="serv-text">
+                <h2>TECHNICAL CONSULTING
+                    SERVICES
+                </h2>
+                <p>Consulting services provide
+                    expertise to help organizations
+                    make strategic decisions. Electing or
+                    designing new technology,
+                    redesigning existing technology,
+                    migrating existing technology to a
+                    new environment</p>
+
+            </div>
+        </div>
+        <div class="serv-box">
+            <img src="assets/12.png">
+            <div class="serv-text">
+                <h2>FINANCING & LEASING
+                    SERVICES
+                </h2>
+                <p>Financing and leasing services can
+                    decrease entity Capex through
+                    leasing a datacenter facility; leasing
+                    equipment or financing a data
+                    center project, such as building or
+                    upgrading a data center facility.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Start -->
+    <div class="carou container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Partners and Customers</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <main class="main">
+            <div class="containerx">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p1.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p2.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p3.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p4.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p5.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p6.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p7.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p81.webp" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p9.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p10.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p11.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p12.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p13.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p14.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p15.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p16.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p17.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p18.png" alt="Image Slider">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-image">
+                                <img src="/img/p19.jpg" alt="Image Slider">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- Add Scrollbar -->
+                    <div class="arr">
+                        <div class="swiper-button-next">
+                            <i class="fas fa-chevron-circle-right arrow-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="fas fa-chevron-circle-left arrow-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer start -->
+    <div class="foo">
+        <div style="background: rgb(78, 78, 78); padding: 10px; text-align: center;">
+            <div
+                style="display: flex; justify-content: flex-end; margin:10px 50px; flex-wrap: wrap; text-align: center;">
+                <h4 style="color: aliceblue; margin-right: 30px; text-align: center;">Know how we can
+                    add value</h4>
+                <button class="btn px-4 btn-three btnn" style="background: rgb(197, 32, 32);"><i
+                        class="fa-solid fa-angles-right me-2"></i><span>Connect with
+                        Us</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-secondary p-5" style="background-color: rgb(189, 189, 189);">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <img src="/img/logo.png" width="200px">
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Solutions</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="/cloud solutions/index.html">Cloud and DataCenter</a>
+                    <a class="text-black mb-2" href="/infrastructure solutions/index.html">Infrastructure</a>
+                    <a class="text-black mb-2" href="/consulting solutions/index.html">Consulting Solutions</a>
+                    <a class="text-black mb-2" href="/cyber solutions/index.html">Cyber Solutions</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Careers</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="#">Life at Cache Digitech</a>
+                    <a class="text-black mb-2" href="#">Meet Our Team</a>
+                    <a class="text-black mb-2" href="#">Latest Jobs</a>
+                    <a class="text-black mb-2" href="#">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+
+                <h3 class="text-black mb-4">About Cache</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="#">Cache Advantage</a>
+                    <a class="text-black mb-2" href="#">Our Growth</a>
+                    <a class="text-black mb-2" href="#">Pillars of Cache</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg me-2 text-black" href="https://www.facebook.com/CacheDigitech01"><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+
+                    <a class="btn btn-lg me-2 text-black" href="https://twitter.com/digitech_cache"><i
+                            class="fab fa-twitter fw-normal"></i></a>
+
+                    <a class="btn btn-lg text-black" href="https://www.instagram.com/cachetechnologies/"><i
+                            class="fab fa-instagram fw-normal"></i></a>
+
+                    <a class="btn btn-lg text-black" href="https://www.linkedin.com/company/cache-digitech-pvt-ltd/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <button class="btn px-4 btn-three btnn" style="background: rgb(197, 32, 32);">
+                    <i class="fa-solid fa-file"></i>&nbsp;<span>Contact Form</span>
+                </button>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Services</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="/Managed_IT_Services/index.html">Managed Services</a>
+                    <a class="text-black mb-2" href="/securityServices/index.html">IT Security Services</a>
+                    <a class="text-black mb-2" href="/datacenter/index.html">DataCenter Services</a>
+                    <a class="text-black mb-2" href="/infrastructureService/index.html">Infrastructure Services</a>
+                    <a class="text-black mb-2" href="/talent acquisition/index.html">Talent Services</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Insights</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black mb-2" href="#">Award & Recognition</a>
+                    <a class="text-black mb-2" style="font-size: 0.8em;" href="#">Blogs</a>
+                    <a class="text-black mb-2" style="font-size: 0.8em;" href="#">Meet our CEO</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-black mb-4">Get In Touch</h3>
+                <p class="mb-2 text-black"><a href="https://goo.gl/maps/kRoH37pr9sYdQA1m8"
+                        style="color: black; line-height: 20px;"><i class="bi bi-geo-alt text-black me-2"></i>GROUND
+                        FLOOR, L-31, KAILASH
+                        COLONY,
+                        NEW
+                        DELHI,SOUTH DELHI, DELHI, 110048</p></a>
+                <p class="mb-2 text-black"><i class="bi bi-envelope-open text-black me-2"></i><a
+                        href="mailto:info@cachedigitech.com" style="color: black; line-height: 20px;"> &nbsp;
+                        info@cachedigitech.com</a>
+                </p>
+                <p class="mb-0 text-black"><i class="bi bi-telephone text-black me-2"></i>1800-309-4333
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">CONTACT US</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">SITEMAP</p>
+                    </div>
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0">INDEX</p>
+                    </div>
+                    <div class="py-2">
+                        <a class="text-white" href="/privacy/index.html">
+                            <p class="m-0 ">PRIVACY STATEMENT</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+
+    <script src='https://unpkg.com/splitting@1.0.0/dist/splitting.js'></script>
+    <script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 5.5,
+            spaceBetween: 10,
+            centeredSlides: true,
+            freeMode: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                500: {
+                    slidesPerView: 1
+                },
+                700: {
+                    slidesPerView: 1.5
+                }
+            }
+        });
+    </script>
+    <script>
+        Splitting();
+        ScrollOut({
+            threshold: .2,
+            once: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
